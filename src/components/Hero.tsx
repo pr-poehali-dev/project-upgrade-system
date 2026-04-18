@@ -25,13 +25,25 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+      <div className="absolute inset-0 bg-black/50 z-0" />
+      <div className="relative z-10 text-center text-white px-6">
+        <p className="text-xs md:text-sm uppercase tracking-widest mb-4 text-violet-300 font-semibold">
+          Игровой маркетплейс
         </p>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
+          ТОРГУЙ<br />БЕЗ ГРАНИЦ
+        </h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-10">
+          Покупай и продавай игровую валюту, аккаунты и услуги для любых игр. Быстро, безопасно, выгодно.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button className="bg-violet-600 hover:bg-violet-700 text-white px-8 py-3 uppercase tracking-wide text-sm font-semibold transition-colors duration-300">
+            Начать покупать
+          </button>
+          <button className="border border-white text-white hover:bg-white hover:text-black px-8 py-3 uppercase tracking-wide text-sm font-semibold transition-all duration-300">
+            Выставить товар
+          </button>
+        </div>
       </div>
     </div>
   );
